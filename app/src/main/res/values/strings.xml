@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TravelFi</string>
+    <string name="search_less_travel_more">Search less Travel more !</string>
+    <string name="front_image_1">front_image_1</string>
+    <string name="front_image_2">front_image_2</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_image">sign_up_image</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="i_read_and_agree_to">I read and agree to</string>
+    <string name="terms_and_conditions">terms and conditions.</string>
+    <string name="user_image">user_image</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="remember_me">Remember me</string>
+    <string name="or_sign_in_using">or sign in using</string>
+    <string name="img_google">img_google</string>
+    <string name="img_facebook">img_facebook</string>
+    <string name="logout">Logout</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "540113370505",
+    "project_id": "travelfi",
+    "storage_bucket": "travelfi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540113370505:android:2aa7a45e379baac26f7558",
+        "android_client_info": {
+          "package_name": "com.example.travelfi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540113370505-6kbu50vo7anpmiglifou6t2c4t0deipv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVWtspaNWFgYgyWynGDyU9Xw4vnmwKSGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540113370505-6kbu50vo7anpmiglifou6t2c4t0deipv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

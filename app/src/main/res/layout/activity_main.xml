@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="409dp"
+        android:layout_height="293dp"
+        android:background="@drawable/shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="286dp"
+            android:layout_height="120dp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/search_less_travel_more"
+            android:textAlignment="center"
+            android:textColor="#3685AA"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.19" />
+
+        <RadioGroup
+            android:id="@+id/toggle"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue_outline"
+            android:checkedButton="@+id/btn_signin"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.36">
+
+            <RadioButton
+                android:id="@+id/btn_signin"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:button="@null"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="@string/sign_in"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:buttonTint="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/btn_signup"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="@string/sign_up"
+                android:textColor="#2490E4"
+                android:textSize="24sp" />
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="410dp"
+        android:layout_height="337dp"
+        android:layout_marginTop="4dp"
+        android:alpha="0.4"
+        android:background="@drawable/oie_0ajgzspopstn"
+        android:contentDescription="@string/front_image_1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="275dp"
+        android:layout_height="298dp"
+        android:layout_marginBottom="212dp"
+        android:contentDescription="@string/front_image_2"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/__01" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

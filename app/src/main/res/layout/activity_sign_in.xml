@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="404dp"
+        android:layout_height="387dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/front_image_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/oie_0ajgzspopstn" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="@string/sign_in"
+        android:textColor="#3685AA"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="99dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/baloo"
+        android:labelFor="@id/usermail"
+        android:text="@string/email"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <EditText
+        android:id="@+id/usermail"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textWebEmailAddress|textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/baloo"
+        android:labelFor="@id/userpass"
+        android:text="@string/password"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/usermail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usermail"
+        app:layout_constraintTop_toBottomOf="@+id/usermail" />
+
+    <EditText
+        android:id="@+id/userpass"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <CheckBox
+        android:id="@+id/remember_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/remember_me"
+        android:textColor="#617073"
+        app:layout_constraintEnd_toEndOf="@+id/userpass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userpass"
+        app:layout_constraintTop_toBottomOf="@+id/userpass" />
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="312dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/baloo"
+        android:text="@string/sign_in"
+        android:textSize="18sp"
+        app:backgroundTint="#3685AA"
+        app:layout_constraintEnd_toEndOf="@+id/userpass"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="@+id/userpass"
+        app:layout_constraintTop_toBottomOf="@+id/userpass" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/or_sign_in_using"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/signin_btn"
+        app:layout_constraintStart_toStartOf="@+id/signin_btn"
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
+
+    <ImageView
+        android:id="@+id/btn_google"
+        android:layout_width="38dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/img_google"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/icons8_google_48" />
+
+    <ImageView
+        android:id="@+id/btn_facebook"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/img_facebook"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/icons8_facebook_48" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
